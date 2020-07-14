@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+        form{padding:15%;
+        border:50px solid #f1f1f1;
+            }
+             input{ width:100%;
+                 padding: 12px 20px;
+                 margin: 8px 0;
+                 display: inline-block;
+                 border: 1px solid #ccc;
+                 box-sizing:border-box;
+                 
+            }
+            
+            button{
+                background-color: #008080;
+                
+                border :none;
+                cursor: pointer;
+                width:100%;
+                padding: 14px 20px;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <h1 style="text-align:center; color:#008080;">Upload an image</h1>
+      
+
+      <form action="/success" method="POST" enctype="multipart/form-data" style="text-align:center;">
+
+        <div class="form-group">
+          <label>Select X-Ray image</label>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" name="image" id="image">
+            <label class="custom-file-label" for="image"></label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Upload</button>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+    </body>
+</html>
